@@ -14,22 +14,45 @@
 <body>
 
    <div class="container"><!-- CONTAINER CLASS -->
-        <header>
-            <div class="img-wrapper">
+
+        <div class="hamburguer"><!-- INI HAMBURGUER CLASS -->
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div><!-- FIM HAMBURGUER CLASS -->
+
+        <header><!--INICIO HEADER-->
+            <div class="img-wrapper"><!-- INICIO IMG-WRAPPER CLASS-->
                 <img src="./imagens/bg.jpg" alt="">
-            </div>
+            </div><!-- FIM IMG-WRAPPER CLASS-->
             <div class="banner"><!--BANNER CLASS-->
                 <h1>Web Developer Front End</h1>
                 <P>Milton  Caus</P>
                 <button>Saiba mais</button>
             </div><!--FIM BANNER CLASS-->
+        </header><!--FIM HEADER-->
 
-        </header>
+        <div class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                </ul>
 
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
 
-
-
+            </nav>
+        </div>
    </div><!-- FIM CONTAINER CLASS -->
     
 </body>
+<script src="./script.js"></script>
 </html>
