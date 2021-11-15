@@ -363,14 +363,22 @@ header {
     height: 100%;
     border-radius: .5rem;
     opacity: .8;
+    transition: opacity .2s;
+}
+
+.card:hover .card-img-wrapper {
+    opacity: .5;
 }
 
 .card-info {
     position: absolute;
     bottom: 0;
     padding: 2rem;
+    opacity: 0rem;
+    visibility: hidden;
     text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .4);
     color: #000;
+    transition: all 2s;
 }
 
 .card-info h2 {
@@ -384,5 +392,33 @@ header {
     font-family:  var(--font-secundary);
     font-weight: bolder ;
     color: #0f0f0f;
+    margin-bottom: 1rem;
+    }
 
+    .card-info p {
+        font-family: var(--font-secundary);
+        color: #000;
+        font-weight: bold;
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+
+    .card-info button {
+        width: 8rem;
+        height: 2.5rem;
+        background: #0F2027;
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        font-family: var(--font-action);
+        font-size: 1rem;
+        color: #fff;
+        border-radius: .5rem;
+        border: none;
+        box-shadow: 0 .1rem .8rem rgba(0, 0, 0,0.4);
+    }
+    
+    .card:hover .card-info {
+        bottom: 2rem;
+        opacity: 1rem;
+        visibility: visible;
     }
