@@ -160,6 +160,7 @@ header {
     animation: moveBanner 1s 0.7s forwards;
 }
 
+
 .banner button {
     font-family: var(--font-action);
     color: #fff;
@@ -421,4 +422,102 @@ header {
         bottom: 2rem;
         opacity: 1rem;
         visibility: visible;
+    }
+
+    /* INICIO DA FORMATAÇÃO DA SESSÃO CONTATO */
+    
+    .sessao-contato {
+        width: 100%;
+        height: 100vh;
+        background-color: #95d5ec;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-wrapper {
+        width: 60%;
+        height: 30rem;
+        display: flex;
+        box-shadow: 0 3rem 5rem rgba(0,0,0, .5);
+    }
+
+    .contato-left {
+        width: 35%;
+        background: linear-gradient(rgba(15,15,15, 0.6), rgba(22,22,22, 0.9)), url(./imagens/contato.jpg);
+        background-size: cover;
+    }
+
+    .contato-right {
+        width: 65%;
+        background-color: #2C5364;
+        padding: 1rem 5rem 5rem;
+    }
+
+    .sessao-contato h1 {
+        width: 100%;
+        text-align: center;
+        font-family: var(--font-primary);
+        color: #000;
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+
+    .sessao-contato form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .input-group {
+        position: relative;
+    }
+
+    .field {
+       width: 30rem;
+       font-size: 1.5rem;
+       font-family: var(--font-secundary);
+       outline: none;
+       border: none;    
+       border-bottom: 2px dashed #000;
+       height: 3rem;
+       margin: 2rem 0;
+       outline: none;
+       border: none;
+    
+    }
+
+    .input-group textarea {
+        padding-top: 0.7rem;
+        max-width: 40rem;
+        max-height: 4rem;
+    }
+
+    .field-label {
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        font-family: var(--font-secundary);
+        text-transform: uppercase;
+        top: 2.5rem;
+        text-align: center;
+        color: #000;
+        transition: all 0.5s;
+    }
+
+    .field:focus ~ label {
+        top: 1rem;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .field:focus {
+        border-bottom: 2px solid;
+    }
+
+    .btn-submit {
+        text-transform: uppercase;
+        width: 30%;
     }
