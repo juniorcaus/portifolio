@@ -1,4 +1,4 @@
-# portifolio
+## portifolio
 
 Desenvolvendo um portifólio usando HTML, CSS e JavaScript
 

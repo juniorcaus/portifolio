@@ -16,6 +16,10 @@
     --font-action: "Muli", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hamburguer {
     width: 2rem;
     height: 2rem;
@@ -27,10 +31,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    
 }
 
 .show-menu .hamburguer{
     right: 15rem;
+    
 }
 
 
@@ -44,12 +50,13 @@
 /* modifcando o abrir e fechar do menu hamburguer   */
 .show-menu #line1 {
     transform: rotate(45deg) translate(.3rem, .45rem);
+    
+    
 }
 
 .show-menu #line2 {
     opacity: 0;
     visibility: hidden;
-    
 }
 
 .show-menu #line3 {
@@ -68,7 +75,6 @@
     color: #fff; 
     font-family: var(--font-action);
     opacity: 0;
-
 }
 
 .hamburguer span::before {
@@ -192,6 +198,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 90;
 }
 
 /* CONFIGURANDO O JS NO CSS PARA ESCONDER/APARECER MENU LATERAL */
@@ -212,6 +219,7 @@ header {
 .menu-item {
     text-align: center;
     margin-bottom: .5rem;
+
     
 }
 
@@ -256,6 +264,7 @@ header {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
     row-gap: .5rem;
+    
     
 }
 
@@ -594,4 +603,55 @@ header {
        border: none;
        border-radius: 5px;
       
+    }
+
+
+    /* FORMATAÇÃO DO RODAPÉ */
+
+    footer {
+        width: 100%;
+        height: 4rem;
+        background-color: #0F2027;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-content {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-content p {
+        font-family: var(--font-secundary);
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .social-list a {
+        margin: 0 2rem;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .social-list ul {
+        display: flex;
+    }
+
+    #link-topo {
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        width: 4rem;
+        height: 4rem;
+        color: #fff;
+        background: #0F2027;
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: .3rem;
+        box-shadow: 0 0.1rem 0.6rem #0000;
     }
